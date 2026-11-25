@@ -1,14 +1,18 @@
 # Living Bowl
 
 Living Bowl is a cross-platform mobile app built with Expo, React Native, and
-TypeScript. The current screen is a random-number demo with responsive layouts,
-selectable visual themes, and localized text.
+TypeScript. Its device-control dashboard previews simulated pump, mist, and
+white LED settings; it does not connect to hardware or Bluetooth.
 
 ## Features
 
 - System, light, dark, and neon themes.
 - System language or English, French, Japanese, and Simplified Chinese.
 - Theme and language preferences persist on the device.
+- Three pump controls, plus mist and white LED controls with independent
+  automatic and manual modes.
+- Detail views expose controller settings and clearly labeled simulated
+  telemetry.
 - Layout adapts to mobile screen widths.
 
 ## Run locally

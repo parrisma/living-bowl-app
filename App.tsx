@@ -1,10 +1,10 @@
 import AppProviders from './src/AppProviders';
-import RandomNumberScreen from './src/features/random-number/RandomNumberScreen';
+import DeviceControlScreen from './src/features/device-control/DeviceControlScreen';
 
 export default function App() {
   return (
     <AppProviders>
-      <RandomNumberScreen />
+      <DeviceControlScreen />
     </AppProviders>
   );
 }

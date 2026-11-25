@@ -53,11 +53,12 @@ src/
   preferences/
     storage.ts                   # Persisted theme/language choices
   features/
-    random-number/
-      random-number.ts          # Functional rule
-      RandomNumberScreen.tsx    # UI
-      random-number.test.ts     # Functional test
-      RandomNumberScreen.test.tsx
+    device-control/
+      device-control.ts        # Config types, bounds, and validation
+      mock-controls.ts         # Simulated apply action and telemetry
+      DeviceControlScreen.tsx  # Dashboard and detail views
+      device-control.test.ts   # Config and mock tests
+      DeviceControlScreen.test.tsx
   shared/
     ui/
       CompactDropdown.tsx       # Compact, accessible dropdown control
