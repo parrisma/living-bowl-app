@@ -1,0 +1,40 @@
+ARG NODE_VERSION=22
+FROM node:${NODE_VERSION}-bookworm
+
+ARG USER_UID=1000
+ARG USER_GID=1000
+ARG DOCKER_GID=999
+
+USER root
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends bash ca-certificates curl git gnupg \
+    && install -m 0755 -d /etc/apt/keyrings \
+    && curl -fsSL https://download.docker.com/linux/debian/gpg -o /tmp/docker.asc \
+    && gpg --dearmor -o /etc/apt/keyrings/docker.gpg /tmp/docker.asc \
+    && chmod a+r /etc/apt/keyrings/docker.gpg \
+    && . /etc/os-release \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian ${VERSION_CODENAME} stable" > /etc/apt/sources.list.d/docker.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends docker-ce-cli docker-compose-plugin \
+    && rm -f /tmp/docker.asc \
+    && rm -rf /var/lib/apt/lists/* \
+    && groupadd --gid "${USER_GID}" --non-unique app \
+    && groupadd --gid "${DOCKER_GID}" --non-unique docker \
+    && useradd --uid "${USER_UID}" --non-unique --gid app --create-home --shell /bin/bash app \
+    && usermod -aG docker app \
+    && mkdir -p /home/app/node_modules \
+    && chown -R app:app /home/app
+
+WORKDIR /home/app
+
+COPY docker/entrypoint-dev.sh /usr/local/bin/entrypoint-dev.sh
+RUN chmod 755 /usr/local/bin/entrypoint-dev.sh
+
+ENV HOME=/home/app
+
+EXPOSE 8081
+
+USER app
+ENTRYPOINT ["/usr/local/bin/entrypoint-dev.sh"]
+CMD ["sleep", "infinity"]

@@ -1,0 +1,19 @@
+{
+  "helloWorld": "こんにちは、世界！",
+  "tapToGenerate": "ボタンをタップして乱数を生成します。",
+  "randomNumber": "乱数: {{number}}",
+  "generateNumber": "乱数を生成",
+  "themeSetting": "テーマ",
+  "languageSetting": "言語",
+  "themeSystem": "システム",
+  "themeLight": "ライト",
+  "themeDark": "ダーク",
+  "themeNeon": "ネオン",
+  "languageSystem": "端末の言語",
+  "languageEnglish": "英語",
+  "languageFrench": "フランス語",
+  "languageChinese": "簡体字中国語",
+  "languageJapanese": "日本語",
+  "settingsError": "設定を保存できませんでした。もう一度お試しください。",
+  "closeDropdown": "メニューを閉じる"
+}

@@ -39,3 +39,16 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Local container and user state
+/.bash_history
+/.cache/
+/.config/
+/.copilot/
+/.docker/
+/.dotnet/
+/.gitconfig
+/.gnupg/
+/.npm/
+/.ssh/
+/.vscode-server/

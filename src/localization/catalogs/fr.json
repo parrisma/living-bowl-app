@@ -1,0 +1,19 @@
+{
+  "helloWorld": "Bonjour, le monde !",
+  "tapToGenerate": "Appuyez sur le bouton pour générer un nombre aléatoire.",
+  "randomNumber": "Nombre aléatoire : {{number}}",
+  "generateNumber": "Générer un nombre",
+  "themeSetting": "Thème",
+  "languageSetting": "Langue",
+  "themeSystem": "Système",
+  "themeLight": "Clair",
+  "themeDark": "Sombre",
+  "themeNeon": "Néon",
+  "languageSystem": "Appareil",
+  "languageEnglish": "Anglais",
+  "languageFrench": "Français",
+  "languageChinese": "Chinois simplifié",
+  "languageJapanese": "Japonais",
+  "settingsError": "Impossible d’enregistrer vos paramètres. Veuillez réessayer.",
+  "closeDropdown": "Fermer le menu"
+}

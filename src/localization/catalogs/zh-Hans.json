@@ -1,0 +1,19 @@
+{
+  "helloWorld": "你好，世界！",
+  "tapToGenerate": "点击按钮生成一个随机数。",
+  "randomNumber": "随机数：{{number}}",
+  "generateNumber": "生成随机数",
+  "themeSetting": "主题",
+  "languageSetting": "语言",
+  "themeSystem": "跟随系统",
+  "themeLight": "浅色",
+  "themeDark": "深色",
+  "themeNeon": "霓虹",
+  "languageSystem": "设备语言",
+  "languageEnglish": "英语",
+  "languageFrench": "法语",
+  "languageChinese": "简体中文",
+  "languageJapanese": "日语",
+  "settingsError": "无法保存设置，请重试。",
+  "closeDropdown": "关闭菜单"
+}

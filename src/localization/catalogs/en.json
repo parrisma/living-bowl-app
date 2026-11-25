@@ -1,0 +1,19 @@
+{
+  "helloWorld": "Hello, world!",
+  "tapToGenerate": "Tap the button to generate a random number.",
+  "randomNumber": "Random number: {{number}}",
+  "generateNumber": "Generate number",
+  "themeSetting": "Theme",
+  "languageSetting": "Language",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeNeon": "Neon",
+  "languageSystem": "Device",
+  "languageEnglish": "English",
+  "languageFrench": "Français",
+  "languageChinese": "简体中文",
+  "languageJapanese": "日本語",
+  "settingsError": "Your settings could not be saved. Please try again.",
+  "closeDropdown": "Close dropdown"
+}
